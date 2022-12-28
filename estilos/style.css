@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao)
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --cor1: #3E4095;
+    --cor2: #F58634;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    color:#727272;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: white;
+    background-color: var(--cor2);
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.661);
+}
+
+section#banner {
+    background-image: url('../imagens/fotoinicia_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+.column{
+    flex-direction: column;
+}
+.banner_headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.banner_headline h1{
+    color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    font-size: 64px;
+    padding: 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.618);
+    margin:0px;
+    max-width: 350px;
+    margin-bottom: 15px;
+    font-weight: lighter;
+
+}
+
+.banner_headline h2{
+    color: var(--cor2);
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 2em;
+    max-width: 350px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.779);
+
+}
